@@ -24,11 +24,6 @@ module BingAdsReporting
             ns("Columns") => {
               ns("#{report_type}ReportColumn") => options[:columns]
             },
-            ns("Scope") => {
-              ns("AccountIds") => {
-                'arr:long' => @settings[:accountId]
-              }
-            },
             ns("Time") => {
               # apparently order is important, and end date has to be before start date, wtf
               ns("CustomDateRangeEnd") => {
